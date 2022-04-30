@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write \"**/*.{css,cjs,mjs,js,jsx,ts,tsx,json,md}\" --config ./prettier.config.json --ignore-path ./.prettierignore"
   },
   "dependencies": {
     "next": "12.1.5",
+    "prettier": "^2.6.2",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
