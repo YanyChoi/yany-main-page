@@ -1,3 +1,6 @@
+import Navbar from '../navbar/navbar';
+import Footer from '../footer/footer';
+
 interface PageLayoutProps {
   children?: JSX.Element;
 }
@@ -5,7 +8,9 @@ interface PageLayoutProps {
 const PageLayout: React.FC<PageLayoutProps> = ({ children }) => {
   return (
     <>
+      <Navbar />
       <div>{children}</div>
+      <Footer />
     </>
   );
 };
