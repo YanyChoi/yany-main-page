@@ -1,0 +1,31 @@
+name: Github Pages Deployment
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x]
+
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: User node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+
+    - name: Get Dependencies
+      run: npm install
+
+    - name: Build & Deploy to Github Pages
+      run: npm run deploy
