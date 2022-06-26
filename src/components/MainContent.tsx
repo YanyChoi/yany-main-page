@@ -1,4 +1,4 @@
-const MainContent = ({}) => {
+const MainContent = () => {
   return (
     <>
       <div>

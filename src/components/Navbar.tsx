@@ -1,4 +1,4 @@
-const Navbar = ({}) => {
+const Navbar = () => {
   return (
     <>
       <div>
