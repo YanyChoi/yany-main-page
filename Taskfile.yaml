@@ -1,14 +1,13 @@
-version: '3'
+version: 3
+
+vars:
 
 tasks:
   build:
     cmds:
-      - yarn install
-      - yarn build
-      - yarn format
-  dev: 
-    cmds:
-      - yarn dev
+      - yarn install;
+      - yarn build;
+      
   start:
     cmds:
-      - yarn start
+      - yarn start;
